@@ -43,7 +43,10 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		return null;
+		if(index<0||index>=students.length)
+			throw new IllegalArgumentException();
+		else
+		return students[index];
 	}
 
 	@Override
@@ -61,7 +64,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
-		try {
+		/*try {
 			students.length++;
 			for(int x=students.length;x>=0;x--) {
 				students[x]=students[x-1];
@@ -70,7 +73,7 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 		catch(IllegalArgumentException e) {
 			System.out.println(e);
-		}
+		}*/
 	}
 
 	@Override

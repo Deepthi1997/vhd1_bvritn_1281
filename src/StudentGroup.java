@@ -35,9 +35,9 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void setStudents(Student[] students) {
 		// Add your implementation here
-		
-		
-		
+		if(students== null) {
+			throw new IllegalArgumentException();
+		}
 	}
 
 	@Override
@@ -96,7 +96,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
-		try {
+		/*try {
 		  for (int k = index; k <students.length; ++k)
           {
               students[k] = students[k+1];
@@ -105,7 +105,7 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 		catch(IllegalArgumentException e){
 			System.out.println(e);
-		}
+		}*/
 	}
 
 	@Override

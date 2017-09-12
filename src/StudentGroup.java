@@ -71,12 +71,12 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void add(Student student, int index) {
 		// Add your implementation here
-		try {
+		/*try {
 		students[index]=student;
 		}
 		catch(IllegalArgumentException e) {
 			System.out.println(e);
-		}
+		}*/
 	}
 
 	@Override

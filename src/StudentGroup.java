@@ -71,12 +71,6 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void add(Student student, int index) {
 		// Add your implementation here
-		/*try {
-		students[index]=student;
-		}
-		catch(IllegalArgumentException e) {
-			System.out.println(e);
-		}*/
 	}
 
 	@Override
@@ -112,6 +106,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void bubbleSort() {
 		// Add your implementation here	
+		/*
 		for(int i=0;i<students.length;i++) {
 			for(int j=0;j<students.length;j++) {
 				if(students[i]>students[j]){
@@ -120,7 +115,7 @@ public class StudentGroup implements StudentArrayOperation {
 					students[j]=temp;					
 				}				
 			}
-		}
+		}*/
 	}
 
 	@Override

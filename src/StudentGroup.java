@@ -64,7 +64,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
-		/*try {
+	/*try {
 			students.length++;
 			for(int x=students.length;x>=0;x--) {
 				students[x]=students[x-1];
@@ -79,7 +79,16 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addLast(Student student) {
 		// Add your implementation here
-	}
+		try {
+			int i=students.length;		
+			students[i+1]=student;
+		}
+		catch(IllegalArgumentException e){
+			System.out.println(e);
+		}
+			
+		}
+	
 
 	@Override
 	public void add(Student student, int index) {
@@ -120,9 +129,9 @@ public class StudentGroup implements StudentArrayOperation {
 	public void bubbleSort() {
 		// Add your implementation here	
 		
-		/* for (int a=1;a<students.length;a++) {
+		/*for (int a=1;a<students.length;a++) {
         for(int b=0;b<students.length-a;b++) {
-            if (((students[b].getStudent()).compareTo((students[b+1].getStudent()))) > 0) {             
+            if (((students[b].getStudent()).compareTo((students[b+1].getStudents()))) > 0) {             
             Student temp = students[b];
             students[b] = students[b+1];
             students[b+1] = temp;
@@ -133,6 +142,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getByBirthDate(Date date) {
 		// Add your implementation here
+		
 		return null;
 	}
 

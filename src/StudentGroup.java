@@ -79,12 +79,12 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addLast(Student student) {
 		// Add your implementation here
-		try {	
+		/*try {	
 			students[students.length]=student;
 		}
 		catch(IllegalArgumentException e){
 			System.out.println(e);
-		}
+		}*/
 	}
 	
 
@@ -96,6 +96,16 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
+		try {
+		  for (int k = index; k <students.length; ++k)
+          {
+              students[k] = students[k+1];
+          }
+		  students.length--;
+		}
+		catch(IllegalArgumentException e){
+			System.out.println(e);
+		}
 	}
 
 	@Override
